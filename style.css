@@ -1,0 +1,68 @@
+body{
+    background-image: url(marelo.jpg);
+    
+}
+
+h1{
+    position: relative;
+    color: #000;
+    font-family: cursive;
+    font-size: 100px;
+    text-decoration: solid underline black;    
+}
+
+
+
+h2, p {
+    color: #000;
+    font-family: cursive;
+    display: flex;
+   
+}
+
+.logo {
+    width: 50px;
+    height: 60px;
+    opacity: 50%;
+  }
+  .container0, .container1, .container2
+  {
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  
+  .card{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    margin: 50px;
+    perspective: 1000px;
+  }
+  
+  .card .flip {
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover .flip{
+    transform: rotateY(180deg);
+  }
+  
+  .front-card, .back-card{
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .back-card{
+    transform: rotateY(180deg);
+  }
+  
+  .front-card img, .back-card img{
+    border-radius: 12px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0, 0.3)
+  }
+  
+   
